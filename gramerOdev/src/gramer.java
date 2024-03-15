@@ -19,7 +19,7 @@ public class gramer {
 			}
 
 			for (String kelime : parse) {
-				System.out.println(kelime);
+				//System.out.println(kelime);
 			}
 			kelimeDuzeltme(kelimeler);
 			kontrolEt(kelimeler);
