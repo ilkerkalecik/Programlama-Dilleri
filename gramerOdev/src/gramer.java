@@ -6,12 +6,20 @@ public class gramer {
 		try (Scanner scanner = new Scanner(System.in)) {
 			System.out.println("cumle girin");
 			String cumle=scanner.nextLine();
+			cumle = cumle.stripLeading();
 
 			ArrayList<String> kelimeler = new ArrayList<>();
 			String[] parse= cumle.split("\\s+");
+
 			for (String kelime : parse) {
+
 				kelimeler.add(kelime);
+
 				
+			}
+
+			for (String kelime : parse) {
+				System.out.println(kelime);
 			}
 			kelimeDuzeltme(kelimeler);
 			kontrolEt(kelimeler);
@@ -32,6 +40,8 @@ public class gramer {
 	static boolean ozne(ArrayList<String> _kelimeler) {
 		String[] ozneListesi= {"Ben", "Sen", "Hasan", "Nurşah", "Elif", "Abdulrezzak",
 				"Şehribanu", "Zeynelabidin", "Naki"};
+        
+
 		for(int i=0;i<ozneListesi.length;i++) {
 
 			if(_kelimeler.get(0).equals((ozneListesi[i]))){
