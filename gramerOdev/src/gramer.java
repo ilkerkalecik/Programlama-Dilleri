@@ -29,7 +29,7 @@ public class gramer {
 	}
 	static void kontrolEt(ArrayList<String> _kelimeler){
 
-		if(((ozne(_kelimeler))&&nesne(_kelimeler)&&yuklem(_kelimeler))==true) {
+		if((((ozne(_kelimeler))&&nesne(_kelimeler)&&yuklem(_kelimeler))==true)&&(_kelimeler.size()==3)) {
 			System.out.println("EVET");
 		}
 		else
@@ -90,4 +90,3 @@ public class gramer {
         }
     }
 }
-
